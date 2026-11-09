@@ -1,0 +1,174 @@
+
+/* =====================================
+   TABLE PAGE HEADER
+===================================== */
+
+.table-header {
+    display: block;
+    background-color: transparent;
+}
+
+.table-header h2 {
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+    background-color: transparent;
+    color: transparent;
+    font-size: 0;
+}
+
+/* =====================================
+   STUDENT GRADES TABLE
+===================================== */
+
+.grades-title {
+    text-align: center;
+    color: #B87582;
+    font-family: Georgia, serif;
+    font-size: 30px;
+    margin: 35px auto 20px;
+}
+
+.grades-table {
+    border-collapse: collapse;
+    width: 70%;
+    margin: 20px auto 40px;
+    text-align: center;
+}
+
+.grades-table th,
+.grades-table td {
+    border: 1px solid black;
+    padding: 8px;
+}
+
+.grades-table tr {
+    background-color: bisque;
+}
+
+.grades-table tr:nth-child(even) {
+    background-color: hotpink;
+}
+
+.grades-table tr:hover {
+    background-color: honeydew;
+}
+
+
+/* =====================================
+   LA DOLCE VITA - TABLE DESIGN
+===================================== */
+
+
+/* MAIN TABLE */
+
+.merge-table {
+    border-collapse: collapse;
+    table-layout: fixed;
+
+    width: 390px;
+    margin: 30px auto 50px;
+
+    background-color: #FFF9F0;
+
+    border: 4px solid #E8C96A;
+
+    text-align: center;
+    color: #76515A;
+
+    font-family: Georgia, serif;
+    font-size: 32px;
+
+    box-shadow: 0 6px 18px rgba(166, 105, 117, 0.16);
+}
+
+
+/* TABLE CELLS */
+
+.merge-table td {
+    border: 3px solid #E8C96A;
+
+    padding: 0;
+    height: 55px;
+
+    background-color: #F4C2CA;
+    color: #76515A;
+
+    text-align: center;
+    vertical-align: middle;
+
+    transition: all 0.3s ease;
+}
+
+
+/* CREAM CELLS */
+
+.merge-table td.cream {
+    background-color: #FFF9F0;
+    color: #B87582;
+}
+
+
+/* HOVER EFFECT */
+
+.merge-table td:hover {
+    background-color: #F5D5BE;
+    color: #76515A;
+
+    cursor: pointer;
+
+    transform: scale(1.03);
+    box-shadow: 0 3px 10px rgba(166, 105, 117, 0.20);
+
+    position: relative;
+    z-index: 2;
+}
+
+
+/* CREAM CELL HOVER */
+
+.merge-table td.cream:hover {
+    background-color: #C9D8B6;
+    color: #53634B;
+}
+
+
+/* TABLE HEADING */
+
+.table-section {
+    text-align: center;
+    margin-top: 35px;
+}
+
+.table-title {
+    font-family: Georgia, serif;
+    color: #B87582;
+    font-size: 27px;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+
+/* MOBILE RESPONSIVENESS */
+
+@media screen and (max-width: 600px) {
+
+    .table-header h2 {
+        font-size: 35pt;
+    }
+
+    .grades-table {
+        width: 95%;
+        font-size: 13px;
+    }
+
+    .merge-table {
+        width: 95%;
+        font-size: 25px;
+    }
+
+    .merge-table td {
+        height: 45px;
+    }
+
+}

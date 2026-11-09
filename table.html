@@ -1,0 +1,168 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Layout HTML dan CSS</title>
+
+    <!-- SHARED WEBSITE DESIGN -->
+    <link rel="stylesheet" href="index.css">
+
+    <!-- TABLE PAGE DESIGN -->
+    <link rel="stylesheet" href="tablemerge.css">
+
+</head>
+
+<body class="table-page">
+
+    <!-- TABLE HEADER BANNER -->
+    <div class="header table-header">
+    <h2></h2>
+</div>
+
+    <!-- NAVIGATION BAR -->
+    <div class="topnav">
+        <a href="index.html">Biodata</a>
+        <a href="table.html">Table</a>
+        <a href="list.html">List</a>
+        <a href="sts.html">STS</a>
+    </div>
+
+
+    <!-- STUDENT GRADES TABLE -->
+
+    <h2 class="grades-title">Tabel Nilai Siswa</h2>
+
+    <table class="grades-table">
+
+        <tr>
+            <th rowspan="2">No</th>
+            <th rowspan="2">Nama Siswa</th>
+            <th rowspan="2">Mata Pelajaran</th>
+            <th colspan="2">Nilai</th>
+        </tr>
+
+        <tr>
+            <th>Ulangan 1</th>
+            <th>Ulangan 2</th>
+        </tr>
+
+        <tr>
+            <td>1</td>
+            <td>Gwen</td>
+            <td>IPS</td>
+            <td>80</td>
+            <td>88</td>
+        </tr>
+
+        <tr>
+            <td>2</td>
+            <td>Alvin</td>
+            <td>Matematika</td>
+            <td>54</td>
+            <td>95</td>
+        </tr>
+
+        <tr>
+            <td>3</td>
+            <td>Charlene</td>
+            <td>P.E</td>
+            <td>78</td>
+            <td>91</td>
+        </tr>
+
+        <tr>
+            <td>4</td>
+            <td>Beverly</td>
+            <td>IPA</td>
+            <td>75</td>
+            <td>93</td>
+        </tr>
+
+        <tr>
+            <td>5</td>
+            <td>Amadea</td>
+            <td>Bahasa Inggris</td>
+            <td>98</td>
+            <td>85</td>
+        </tr>
+
+    </table>
+
+
+    <!-- TUGAS TABLE MERGE -->
+
+    <div class="table-section">
+
+        <h2 class="table-title">Tugas Table</h2>
+
+        <table class="merge-table">
+
+            <colgroup>
+                <col style="width:50px">
+                <col style="width:50px">
+                <col style="width:50px">
+                <col style="width:50px">
+                <col style="width:50px">
+                <col style="width:30px">
+                <col style="width:30px">
+                <col style="width:50px">
+                <col style="width:30px">
+            </colgroup>
+
+            <!-- ROW 1 -->
+            <tr>
+                <td rowspan="3">1</td>
+                <td colspan="2">2</td>
+                <td colspan="2">3</td>
+                <td rowspan="4">4</td>
+                <td rowspan="4">5</td>
+                <td rowspan="2">6</td>
+                <td rowspan="6">7</td>
+            </tr>
+
+            <!-- ROW 2 -->
+            <tr>
+                <td class="cream">8</td>
+                <td class="cream">9</td>
+                <td colspan="2" class="cream">10</td>
+            </tr>
+
+            <!-- ROW 3 -->
+            <tr>
+                <td>11</td>
+                <td>12</td>
+                <td>13</td>
+                <td>14</td>
+                <td rowspan="3">15</td>
+            </tr>
+
+            <!-- ROW 4 -->
+            <tr>
+                <td colspan="5" class="cream">16</td>
+            </tr>
+
+            <!-- ROW 5 -->
+            <tr>
+                <td rowspan="2">17</td>
+                <td colspan="2">18</td>
+                <td rowspan="2">19</td>
+                <td colspan="3">20</td>
+            </tr>
+
+            <!-- ROW 6 -->
+            <tr>
+                <td class="cream">21</td>
+                <td class="cream">22</td>
+                <td colspan="4" class="cream">23</td>
+            </tr>
+
+        </table>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,559 @@
+
+/* =====================================
+   GENERAL BACKGROUND
+===================================== */
+
+body {
+    background-image: url("La Dolce Vita Lemon Summer Wallpaper for Desktop & Laptop _ Mediterranean Citrus Aesthetic.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+/* =====================================
+   HEADINGS
+===================================== */
+
+h1 {
+    background-color: #86C5FF;
+    color: #F8E6A0;
+    text-align: center;
+    opacity: 0.85;
+    font-size: 50pt;
+    font-weight: bold;
+}
+
+h2 {
+    background-color: #045490;
+    color: #f9ed9a;
+    text-align: center;
+    opacity: 0.85;
+    font-size: 60pt;
+}
+
+h3 {
+    background-color: #F2C400;
+    color: #0077C8;
+    text-align: center;
+    opacity: 0.85;
+    font-size: 95pt;
+}
+
+h4 {
+    background-color: #084463;
+    color: #F2BB16;
+    text-align: center;
+    opacity: 0.85;
+    font-size: 95pt;
+}
+
+h5 {
+    background-color: #F8E6A0;
+    color: #2E5AA7;
+    text-align: center;
+    opacity: 0.85;
+    font-size: 95pt;
+}
+
+h6 {
+    background-color: #F8E6A0;
+    color: #2E5AA7;
+    text-align: center;
+    opacity: 0.85;
+    font-size: 95pt;
+}
+
+
+/* =====================================
+   BIODATA SECTION
+===================================== */
+
+div.biodata {
+    margin: 30px auto;
+    width: 100%;
+    height: 100%;
+    background-image: url("La Dolce Vita Stripes.jpg");
+    background-size: cover;
+    background-position: center;
+    color: #2E5AA7;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 50px;
+    padding: 30px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+}
+
+div.foto {
+    position: relative;
+    width: 630px;
+    height: 830px;
+    overflow: hidden;
+    border-radius: 15px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid #ffc247;
+}
+
+div.foto img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+div.foto img.top {
+    opacity: 1;
+    z-index: 2;
+}
+
+div.foto:hover img.top {
+    opacity: 0;
+    transform: scale(1.1);
+}
+
+div.foto img.bottom {
+    opacity: 1;
+    z-index: 1;
+}
+
+div.foto:hover img.bottom {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+
+/* =====================================
+   GENERAL IMAGE SETTINGS
+===================================== */
+
+img {
+    padding: 10px;
+}
+
+
+/* =====================================
+   FOOD SECTION
+===================================== */
+
+div.makanan {
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* Food labels */
+
+.makanan .Yogurt p,
+.makanan .Steak p,
+.makanan .PokeBowl p,
+.makanan .Pizza p {
+    font-size: 60px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    color: #2E5AA7;
+    padding: 15px;
+    margin: 0;
+    border: 4px solid #999;
+    width: 470px;
+    height: 150px;
+    background-color: #F8E6A0;
+    border-radius: 15px;
+    display: inline-block;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.makanan .Yogurt p:hover,
+.makanan .Steak p:hover,
+.makanan .PokeBowl p:hover,
+.makanan .Pizza p:hover {
+    background-color: #F8E6A0;
+    color: #2E5AA7;
+    border: 4px solid #2c3f70;
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+/* Food images */
+
+div.Yogurt img,
+div.Steak img,
+div.PokeBowl img,
+div.Pizza img {
+    width: 800px;
+    height: 850px;
+    border-radius: 20px;
+    background-color: #F8E6A0;
+    box-shadow: 5px 5px 12px #FFBB33;
+    margin-bottom: 25px;
+}
+
+div.Pizza img {
+    width: 850px;
+    height: 800px;
+    border-radius: 25px;
+}
+
+div.Yogurt:hover,
+div.Steak:hover,
+div.PokeBowl:hover,
+div.Pizza:hover {
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    transform: scale(1.05);
+}
+
+
+/* =====================================
+   DRINKS SECTION
+===================================== */
+
+div.minuman {
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* Drink labels */
+
+.minuman .OolongRoastMilkTea p,
+.minuman .DaHongPaoMilkTea p,
+.minuman .GreekYogurtSmoothie p,
+.minuman .Matcha p {
+    font-size: 60px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    color: #2E5AA7;
+    padding: 15px;
+    margin: 0;
+    border: 4px solid #999;
+    width: 470px;
+    height: 150px;
+    background-color: #F8E6A0;
+    border-radius: 15px;
+    display: inline-block;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.minuman .OolongRoastMilkTea p:hover,
+.minuman .DaHongPaoMilkTea p:hover,
+.minuman .GreekYogurtSmoothie p:hover,
+.minuman .Matcha p:hover {
+    background-color: #F8E6A0;
+    color: #2E5AA7;
+    border: 4px solid #2c3f70;
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+/* Drink images */
+
+div.OolongRoastMilkTea img,
+div.DaHongPaoMilkTea img,
+div.GreekYogurtSmoothie img,
+div.Matcha img {
+    width: 870px;
+    height: 850px;
+    border-radius: 30px;
+    background-color: #FFBB33;
+    box-shadow: 5px 5px 12px #f9ed9a;
+    margin-bottom: 25px;
+}
+
+div.OolongRoastMilkTea:hover,
+div.DaHongPaoMilkTea:hover,
+div.GreekYogurtSmoothie:hover,
+div.Matcha:hover {
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    transform: scale(1.05);
+}
+
+
+/* =====================================
+   CELEBRITY SECTION
+===================================== */
+
+div.celebrity {
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* Celebrity labels */
+
+.celebrity .TaylorSwift p,
+.celebrity .DuaLipa p,
+.celebrity .LittleMix p,
+.celebrity .ArianaGrande p {
+    font-size: 60px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    color: #2E5AA7;
+    padding: 15px;
+    margin: 0;
+    border: 4px solid #999;
+    width: 470px;
+    height: 150px;
+    background-color: #F8E6A0;
+    border-radius: 15px;
+    display: inline-block;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.celebrity .TaylorSwift p:hover,
+.celebrity .DuaLipa p:hover,
+.celebrity .LittleMix p:hover,
+.celebrity .ArianaGrande p:hover {
+    background-color: #F8E6A0;
+    color: #2E5AA7;
+    border: 4px solid #2c3f70;
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+/* Celebrity images */
+
+div.TaylorSwift img,
+div.DuaLipa img {
+    width: 800px;
+    height: 1000px;
+}
+
+div.LittleMix img {
+    width: 950px;
+    height: 1000px;
+}
+
+div.ArianaGrande img {
+    width: 870px;
+    height: 1000px;
+}
+
+div.TaylorSwift img,
+div.DuaLipa img,
+div.LittleMix img,
+div.ArianaGrande img {
+    border-radius: 25px;
+    background-color: #86C5FF;
+    box-shadow: 5px 5px 12px #f9ed9a;
+    margin-bottom: 25px;
+}
+
+div.TaylorSwift:hover,
+div.DuaLipa:hover,
+div.LittleMix:hover,
+div.ArianaGrande:hover {
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    transform: scale(1.05);
+}
+
+
+/* =====================================
+   SERIES SECTION
+===================================== */
+
+div.series {
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* Series labels */
+
+.series .StrangerThings p,
+.series .TheUmbrellaAcademy p,
+.series .SurvivingSummer p,
+.series .WhataGirlWants p {
+    font-size: 60px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    color: #2E5AA7;
+    padding: 15px;
+    margin: 0;
+    border: 4px solid #999;
+    width: 470px;
+    height: 150px;
+    background-color: #F8E6A0;
+    border-radius: 15px;
+    display: inline-block;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.series .TheUmbrellaAcademy p {
+    width: 330px;
+    height: 300px;
+}
+
+.series .StrangerThings p:hover,
+.series .TheUmbrellaAcademy p:hover,
+.series .SurvivingSummer p:hover,
+.series .WhataGirlWants p:hover {
+    background-color: #F8E6A0;
+    color: #2E5AA7;
+    border: 4px solid #2c3f70;
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+/* Series images */
+
+div.StrangerThings img {
+    width: 1000px;
+    height: 1200px;
+}
+
+div.TheUmbrellaAcademy img {
+    width: 1000px;
+    height: 1500px;
+}
+
+div.SurvivingSummer img,
+div.WhataGirlWants img {
+    width: 900px;
+    height: 1200px;
+}
+
+div.StrangerThings img,
+div.TheUmbrellaAcademy img,
+div.SurvivingSummer img,
+div.WhataGirlWants img {
+    border-radius: 25px;
+    background-color: #0033A0;
+    box-shadow: 5px 5px 12px #f9ed9a;
+    margin-bottom: 25px;
+}
+
+div.StrangerThings:hover,
+div.TheUmbrellaAcademy:hover,
+div.SurvivingSummer:hover,
+div.WhataGirlWants:hover {
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    transform: scale(1.05);
+}
+
+
+/* =====================================
+   DREAM UNIVERSITIES SECTION
+===================================== */
+
+div.dreamuni {
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* University labels */
+
+.dreamuni .Xi-anJiaotongLiverpoolUniversity p,
+.dreamuni .ZhejiangInternationalBusinessSchool p,
+.dreamuni .CityUniversityofHongKong p,
+.dreamuni .TheUniversityofHongKong p,
+.dreamuni .UniversityofNottinghamNingboChina p {
+    font-size: 60px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    color: #2E5AA7;
+    padding: 15px;
+    margin: 0;
+    border: 4px solid #999;
+    width: 470px;
+    height: 250px;
+    background-color: #F8E6A0;
+    border-radius: 15px;
+    display: inline-block;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.dreamuni .Xi-anJiaotongLiverpoolUniversity p {
+    font-size: 55px;
+    height: 210px;
+}
+
+.dreamuni .ZhejiangInternationalBusinessSchool p {
+    height: 300px;
+}
+
+.dreamuni .Xi-anJiaotongLiverpoolUniversity p:hover,
+.dreamuni .ZhejiangInternationalBusinessSchool p:hover,
+.dreamuni .CityUniversityofHongKong p:hover,
+.dreamuni .TheUniversityofHongKong p:hover,
+.dreamuni .UniversityofNottinghamNingboChina p:hover {
+    background-color: #F8E6A0;
+    color: #2E5AA7;
+    border: 4px solid #2c3f70;
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+/* University images */
+
+div.Xi-anJiaotongLiverpoolUniversity img,
+div.TheUniversityofHongKong img,
+div.UniversityofNottinghamNingboChina img {
+    width: 1000px;
+    height: 1000px;
+}
+
+div.ZhejiangInternationalBusinessSchool img {
+    width: 900px;
+    height: 900px;
+}
+
+div.CityUniversityofHongKong img {
+    width: 950px;
+    height: 980px;
+}
+
+div.Xi-anJiaotongLiverpoolUniversity img,
+div.ZhejiangInternationalBusinessSchool img,
+div.CityUniversityofHongKong img,
+div.TheUniversityofHongKong img,
+div.UniversityofNottinghamNingboChina img {
+    border-radius: 25px;
+    background-color: #F8E6A0;
+    box-shadow: 5px 5px 12px #f9ed9a;
+    margin-bottom: 25px;
+}
+
+div.Xi-anJiaotongLiverpoolUniversity:hover,
+div.ZhejiangInternationalBusinessSchool:hover,
+div.CityUniversityofHongKong:hover,
+div.TheUniversityofHongKong:hover,
+div.UniversityofNottinghamNingboChina:hover {
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    transform: scale(1.05);
+}

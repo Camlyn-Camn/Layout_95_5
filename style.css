@@ -1,0 +1,40 @@
+h1{
+    color: aqua;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+text-decoration: overline;
+text-decoration-color: darksalmon;
+text-decoration-style: dotted ;
+text-decoration-thickness: 5px;
+}
+h2{
+    text-decoration: line-through;
+    text-decoration-color: bisque;
+    text-decoration-style: wavy;
+    text-decoration-thickness: 5px;
+}
+h3{
+    text-decoration: underline;
+    text-decoration-color: darkgoldenrod;
+    text-decoration-style: initial;
+    text-decoration-thickness: 5px;
+}
+p.a{
+    text-decoration: overline underline;
+    text-decoration-color: blueviolet;
+    text-decoration-style: double;
+    text-decoration-thickness: 5px;
+    color: aquamarine;
+    text-align: left;
+}
+p.b{color: pink;
+    text-align: center;
+}
+p.c{
+    color: brown;
+    text-align: right;
+}
+p.d{
+    color: fuchsia;
+    text-align: justify;
+    background-color:aqua;
+}

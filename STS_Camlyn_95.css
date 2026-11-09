@@ -1,0 +1,956 @@
+body{
+    background-image: url(Hibiscus\ Stripes.jpg);
+    background-size: cover;
+    background-position: center;
+}
+h1{
+    background-color: #f9ed9a;
+    color: #FC8A8E ;
+    text-align: center;
+    opacity: 85%;
+    font-size: 30pt;
+    font-family: "CedarvilleCursive";
+    
+}
+@font-face {
+    font-family: "CedarvilleCursive";
+    src: url("CedarvilleCursive-Regular.ttf") format("truetype");
+}
+
+
+.rounded-heading {
+
+    width: 700px;
+
+    min-height: 180px;
+
+    padding: 20px;
+
+    margin: 40px auto;
+
+    background-color: #FF4D8D;
+
+    border: 4px solid #FC8A8E;
+
+    border-radius: 20px;
+
+    box-sizing: border-box;
+
+    text-align: center;
+
+    transition: all 0.3s ease;
+
+}
+
+
+.rounded-heading h2 {
+
+    margin: 15px 0;
+
+    color: #F9ED9A;
+
+    font-family: "Comic Relief", sans-serif;
+
+    font-size: 25pt;
+
+    font-weight: bold;
+
+}
+
+
+
+.rounded-heading:hover {
+
+    background-color: #FF6F61;
+
+    border-color: #8ED6D0;
+
+    transform: scale(1.05);
+
+    cursor: pointer;
+
+}
+
+
+
+@media (max-width: 600px) {
+
+    .rounded-heading {
+
+        width: 85vw;
+
+        min-height: 150px;
+
+    }
+
+    .rounded-heading h2 {
+
+        font-size: 20pt;
+
+    }
+
+}
+
+
+.scalloped-heading {
+
+    width: 550px;
+    height: 180px;
+
+    margin: 50px auto;
+
+    position: relative;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    transition:
+        transform 0.4s ease,
+        filter 0.4s ease;
+}
+
+
+
+.scalloped-border {
+
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+
+    top: 0;
+    left: 0;
+
+    z-index: 1;
+
+}
+
+
+
+.scalloped-heading h3 {
+
+    position: relative;
+
+    z-index: 2;
+
+    margin: 0;
+
+    padding: 10px 20px;
+
+    color: #F28705 !important;
+
+    font-family: "CedarvilleCursive", cursive;
+
+    font-size: 38px;
+
+    font-weight: normal;
+
+    line-height: 1.2;
+
+    text-align: center;
+
+    transition:
+        transform 0.4s ease,
+        color 0.4s ease;
+}
+
+
+
+.scalloped-heading:hover {
+
+    transform: scale(1.05) translateY(-5px);
+
+    filter: drop-shadow(
+        0 10px 15px rgba(0, 0, 0, 0.20)
+    );
+
+}
+
+
+.scalloped-heading:hover h3 {
+
+    transform: scale(1.03);
+
+}
+
+
+
+@media (max-width: 600px) {
+
+    .scalloped-heading {
+
+        width: 85vw;
+        height: 130px;
+
+    }
+
+    .scalloped-heading h3 {
+
+        font-size: 28px;
+
+    }
+
+}
+
+.rect-box:hover {
+  transform: scale(1.1);      
+}
+
+
+.dance-container {
+    display: flex;
+
+    flex-direction: row;
+
+    justify-content: center;
+
+    align-items: flex-start;
+
+    gap: 25px;
+
+    margin-top: 60px;
+
+    margin-bottom: 60px;
+
+    flex-wrap: wrap;
+}
+
+
+
+.dance-card {
+    position: relative;
+
+    width: 450px;
+
+    height: 450px;
+
+    overflow: hidden;
+
+    border-radius: 10px;
+
+    border: 3px solid #FC8A8E;
+
+    background-color: #f9ed9a;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+
+    flex-shrink: 0;
+}
+
+
+
+.dance-card img {
+    width: 550px;
+
+    height: 400px;
+
+    object-fit: cover;
+
+    display: block;
+
+    transition: transform 0.5s ease;
+}
+
+
+
+.dance-card:hover img {
+    transform: scale(1.05);
+}
+
+
+.information {
+    position: absolute;
+
+    top: 0;
+
+    right: 0;
+
+    width: 60%;
+
+    height: 100%;
+
+    box-sizing: border-box;
+
+    padding: 25px;
+
+    background-color: rgba(249, 237, 154, 0.96);
+
+    border-left: 4px solid #FC8A8E;
+
+    color: #7A4E48;
+
+
+
+    transform: translateX(100%);
+
+    transition: transform 0.5s ease;
+
+
+    overflow-y: auto;
+
+    overflow-x: hidden;
+
+
+
+
+    scrollbar-width: thin;
+}
+
+
+
+.dance-card:hover .information {
+    transform: translateX(0);
+}
+
+
+
+.information::-webkit-scrollbar {
+    width: 7px;
+}
+
+.information::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.25);
+
+    border-radius: 10px;
+}
+
+.information::-webkit-scrollbar-thumb {
+    background: #FC8A8E;
+
+    border-radius: 10px;
+}
+
+
+
+.information h4 {
+    color: #3ABFBA;
+
+    font-family: "CedarvilleCursive", sans-serif;
+
+    font-size: 20px;
+
+    font-weight: bold;
+
+    line-height: 1.3;
+
+    margin-top: 5px;
+
+    margin-bottom: 15px;
+}
+
+
+
+.information p {
+    font-family: "Comic Relief", sans-serif;
+
+    color: #FF7F66;
+
+    font-weight: bold;
+
+    font-size: 14px;
+
+    line-height: 1.6;
+
+    margin-top: 0;
+    
+    margin-bottom: 18px;
+}
+
+@media (max-width: 1100px) {
+
+    .dance-container {
+        flex-wrap: wrap;
+    }
+
+}
+
+
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 15px;
+    }
+
+
+    h1 {
+        font-size: 22pt;
+    }
+
+
+    .dance-container {
+        flex-direction: column;
+
+        align-items: center;
+
+        gap: 30px;
+    }
+
+
+    .dance-card {
+        width: 250px;
+
+        height: 450px;
+    }
+
+
+    .information {
+        width: 65%;
+
+        padding: 18px;
+    }
+
+
+    .information h4 {
+        font-size: 18px;
+    }
+
+
+    .information p {
+        font-size: 13px;
+    }
+
+}
+
+
+
+
+.rect-box:hover {
+  transform: scale(1.1);      
+}
+
+
+.dance-container {
+    display: flex;
+
+    flex-direction: row;
+
+    justify-content: center;
+
+    align-items: flex-start;
+
+    gap: 25px;
+
+    margin-top: 60px;
+
+    margin-bottom: 60px;
+
+    flex-wrap: wrap;
+}
+
+
+
+.dance-card {
+    width: 380px;
+    height: 600px;
+    overflow: hidden;
+    border-radius: 10px;
+    border: 4px solid #FC8A8E;
+    background-color: #f9ed9a;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    flex-shrink: 0;
+}
+.dance-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+
+.dance-card img {
+    width: 120%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+
+    transition: transform 0.5s ease;
+}
+
+
+
+
+.dance-card:hover img {
+    transform: scale(1.05);
+}
+
+
+.information {
+    position: absolute;
+
+    top: 0;
+
+    right: 0;
+
+    width: 60%;
+
+    height: 100%;
+
+    box-sizing: border-box;
+
+    padding: 25px;
+
+    background-color: rgba(249, 237, 154, 0.96);
+
+    border-left: 4px solid #FC8A8E;
+
+    color: #7A4E48;
+
+
+    
+    transform: translateX(100%);
+
+    transition: transform 0.5s ease;
+
+
+    
+    overflow-y: auto;
+
+    overflow-x: hidden;
+
+
+        scrollbar-width: thin;
+}
+
+
+
+.dance-card:hover .information {
+    transform: translateX(0);
+}
+
+
+
+.information::-webkit-scrollbar {
+    width: 7px;
+}
+
+.information::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.25);
+
+    border-radius: 10px;
+}
+
+.information::-webkit-scrollbar-thumb {
+    background: #FC8A8E;
+
+    border-radius: 10px;
+}
+
+
+
+.information h4 {
+    color: #3ABFBA;
+
+    font-family: "CedarvilleCursive", sans-serif;
+
+    font-size: 30px;
+
+    font-weight: bold;
+
+    line-height: 1.3;
+
+    margin-top: 5px;
+
+    margin-bottom: 15px;
+}
+
+
+.information p {
+    font-family: "Comic Relief", sans-serif;
+
+    color: #FF7F66;
+
+    font-weight: bold;
+
+    font-size: 25px;
+
+    line-height: 1.6;
+
+    margin-top: 0;
+    
+    margin-bottom: 18px;
+}
+
+
+
+@media (max-width: 1100px) {
+
+    .dance-container {
+        flex-wrap: wrap;
+    }
+
+}
+
+
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 15px;
+    }
+
+
+    h1 {
+        font-size: 22pt;
+    }
+
+
+    .dance-container {
+        flex-direction: column;
+
+        align-items: center;
+
+        gap: 30px;
+    }
+
+
+    .dance-card {
+        width: 250px;
+
+        height: 450px;
+    }
+
+
+    .information {
+        width: 65%;
+
+        padding: 18px;
+    }
+
+
+    .information h4 {
+        font-size: 18px;
+    }
+
+
+    .information p {
+        font-size: 13px;
+    }
+
+}
+
+.scalloped-heading {
+
+    --background-color: #F9ED9A;
+    --text-color: #FC8A8E;
+    --scallop-color: #FC8A8E;
+
+    width: 550px;
+    height: 180px;
+
+    margin: 50px auto;
+
+    position: relative;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    transition:
+        transform 0.4s ease,
+        filter 0.4s ease;
+
+}
+
+
+
+
+.scalloped-border {
+
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+
+    top: 0;
+    left: 0;
+
+    z-index: 1;
+
+}
+
+
+
+.scalloped-heading h5 {
+
+    position: relative;
+
+    z-index: 2;
+
+    margin: 0;
+
+    padding: 10px 20px;
+
+    color: var(--text-color);
+
+    font-family: "CedarvilleCursive", cursive;
+
+    font-size: 38px;
+
+    font-weight: normal;
+
+    line-height: 1.2;
+
+    text-align: center;
+
+    transition:
+        transform 0.4s ease,
+        color 0.4s ease;
+
+}
+
+
+
+
+.scalloped-heading:hover {
+
+    transform: scale(1.05) translateY(-5px);
+
+    filter:
+        drop-shadow(0 10px 15px rgba(0, 0, 0, 0.20));
+
+}
+
+
+.scalloped-heading:hover h5 {
+
+    transform: scale(1.03);
+
+}
+
+
+
+
+@media (max-width: 600px) {
+
+    .scalloped-heading {
+
+        width: 85vw;
+
+        height: 130px;
+
+    }
+
+    .scalloped-heading h5 {
+
+        font-size: 28px;
+
+    }
+
+}
+
+
+
+.niang-card {
+    width: 6500px;
+    height: 800px;
+
+    margin: 60px 65px;
+
+    position: relative;
+    overflow: hidden;
+
+    /* BACKGROUND PICTURE */
+    background-image: url("Summer\ Stripes.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    border: 4px solid #FC8A8E;
+    border-radius: 20px;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+
+    box-sizing: border-box;
+
+    transition: transform 0.4s ease,
+                box-shadow 0.4s ease;
+}
+
+
+
+.niang-photo {
+    position: absolute;
+
+    left: 25%;
+    top: 50%;
+
+    transform: translate(-50%, -50%);
+
+    width: 480px;
+    height: 700px;
+
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.niang-photo img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    object-position: center;
+
+    display: block;
+
+    transition: transform 0.5s ease;
+}
+
+.niang-card:hover .niang-photo img {
+    transform: scale(1.05);
+}
+
+
+.niang-info {
+    position: absolute;
+
+    top: 0;
+    right: 0;
+
+    width: 50%;
+    height: 100%;
+
+    padding: 25px;
+
+    box-sizing: border-box;
+
+      
+
+    border-left: 4px solid #FC8A8E;
+
+    /* Hidden off the right side */
+    transform: translateX(100%);
+
+    transition: transform 0.5s ease;
+
+    /* Makes information scrollable */
+    overflow-y: auto;
+}
+
+
+
+.niang-card:hover .niang-info {
+    transform: translateX(0);
+}
+
+
+
+
+.niang-info h6 {
+    margin-top: 5px;
+    margin-bottom: 15px;
+
+    color: #f9ed9a;
+
+    font-family: "CedarvilleCursive", cursive;
+
+    font-size: 80px;
+
+    font-weight: bold;
+
+    line-height: 1.3;
+
+    text-align: center;
+}
+
+
+
+.niang-info p {
+    margin: 0 0 18px 0;
+
+    text-align: justify;
+
+    line-height: 1.5;
+
+    text-indent: 40px;
+
+    margin-bottom: 20px;
+
+    color: #79DCF2;
+
+    font-family: "Comic Relief", sans-serif;
+
+    font-size: 25px;
+
+    font-weight: bold;
+
+    line-height: 1.6;
+}
+
+
+
+
+.niang-info::-webkit-scrollbar {
+    width: 8px;
+}
+
+
+.niang-info::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.4);
+
+    border-radius: 10px;
+}
+
+
+.niang-info::-webkit-scrollbar-thumb {
+    background-color: #FC8A8E;
+
+    border-radius: 10px;
+}
+
+
+.niang-card:hover {
+    transform: scale(1.02);
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+}
+
+
+
+@media (max-width: 700px) {
+
+    .niang-card {
+        width: 90vw;
+
+        height: 400px;
+
+        margin: 40px auto;
+    }
+
+
+    .niang-photo {
+        width: 50%;
+    }
+
+
+    .niang-info {
+        width: 50%;
+
+        padding: 20px;
+    }
+
+
+    .niang-info h6 {
+        font-size: 24px;
+    }
+
+
+    .niang-info p {
+        font-size: 13px;
+    }
+}
+
+.sts-header {
+    background-color: transparent;
+    background-image: url("Pastel\ Kawaii\ Calligraphy\ Banner.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}

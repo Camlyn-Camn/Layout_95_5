@@ -1,0 +1,45 @@
+body{
+background-image: url("images.jpg");
+}
+
+img.ukuran{
+    height: 400px;
+    width: 300px;
+}
+
+img.lengkungan{
+    height: 300px;
+    width: 300px;
+    border-radius: 20% 0% 20% 0%;
+}
+
+div.kelompok{
+    height: 300px;
+    width: 300px;
+    background-color: blanchedalmond;
+    border-radius: 20%;
+}
+
+div.kelompok img{
+    height: 270px;
+    width: 270px;
+    border-radius: 20%;
+    border: 2px solid saddlebrown;
+}
+
+div.efek:hover{
+    height: 350px;
+    width: 300px;
+    background-color: turquoise;
+    box-shadow: 15px 15px 10px deepskyblue;
+}
+
+p.external{
+    font-family:"abcde";
+    font-size: 30pt;
+}
+
+@font-face {
+    font-family: "abcde";
+    src: url("hullgaria/Hullgaria.otf");
+}
